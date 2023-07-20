@@ -1,0 +1,70 @@
+/*estilos universales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-family: poppins, sans-serif;
+
+}
+
+h2{
+    font-family: belanosima, sans-serif;
+    text-align: center;
+}
+
+h3{
+    font-family: belanosima, sans-serif;
+    text-align: center;
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: red;
+}
+
+/*fin de estilos universales*/
+
+/*estilo barra navegadora*/
+nav ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #00425a;
+}
+
+nav ul li{
+    float:left
+}
+
+nav ul li a{
+    display: block;
+    color:#eff5f5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/*Fin estilo barra navegadora*/
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+p{
+    font-family: poppins, sans-serif;
+
+}
+h2{
+    font-family: belanosima, sans-serif;
+    text-align: center;
+}
+h3{
+    font-family: belanosima, sans-serif;
+    text-align: center;
+}
