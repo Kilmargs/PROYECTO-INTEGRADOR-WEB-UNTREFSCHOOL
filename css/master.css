@@ -18,7 +18,7 @@ h2{
 /*fin de estilos universales*/
 
 /*estilo barra navegadora*/
-.navresponsive_container{
+.navresponsive_ul{
 display: none;
 }
 
@@ -80,17 +80,38 @@ footer article{
 .nav_ul{
     display: none;
 }
-.navresponsive_container{
+.navresponsive_ul{
     display: block;
-    position: absolute;
+    position:fixed;
     width: 100%;
+    margin-top: 30px;
 }
-.navresponsive_buttom{
-    float: right;
-    font-size: 25px;
-    padding: 6px 20px;
+.navresponsive_ul_div{
+    display:flex;
+    justify-content: space-between;
+    margin-top: -30px;
+    background-color: #00425a;
+    height: 50px;
+}
+.navresponsive_ul_div i{
+    padding: 10px;
+    height: 40px;
+}
+.navresponsive_container{
+    position: relative;
+    top: -1000px;
+}
+.navresponsive_ul_li{
+    padding: 10px;
 }
 .navresponsive_ul_li i{
     color: #FC7300;
+}
+.navresponsive_ul_li a{
+    text-decoration: none;
+}
+.navresponsive_ul:hover > .navresponsive_container{
+    top: 0;
+    background-color: #00425a;
 }
 }
