@@ -3,68 +3,94 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: belanosima, sans-serif;
+    color: #eff5f5;
 }
 
 p{
     font-family: poppins, sans-serif;
-
 }
 
 h2{
-    font-family: belanosima, sans-serif;
     text-align: center;
-}
-
-h3{
-    font-family: belanosima, sans-serif;
-    text-align: center;
-}
-
-div{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: red;
 }
 
 /*fin de estilos universales*/
 
 /*estilo barra navegadora*/
-nav ul{
-    list-style-type: none;
-    overflow: hidden;
+.navresponsive_container{
+display: none;
+}
+
+.nav{
     background-color: #00425a;
+    position: fixed;
+    width: 100%;
 }
 
-nav ul li{
-    float:left
+.nav_ul_li{
+    display: inline-block;
+    padding: 10px;
 }
 
-nav ul li a{
-    display: block;
-    color:#eff5f5;
-    text-align: center;
-    padding: 14px 16px;
+.nav_ul_li i{
+    width: 20px;
+    color: #FC7300;
+}
+
+.nav_ul_li a{
     text-decoration: none;
 }
-/*Fin estilo barra navegadora*/
 
+nav ul li a:hover{
+    color: #FC7300;
+}
+/*Fin estilo barra navegadora*/
+/*estilo section*/
+
+section{
+    background-color: #00425a;
+}
+/*Fin estilo section*/
+/*estilo footer*/
 footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    background-color: #1F8A70;
 }
 
-p{
-    font-family: poppins, sans-serif;
+footer article{
+    width: 30%;
+}
+.redes_sociales ul li a{
+    display: block;
+    text-decoration: none;
+    margin-top: 20px;
+}
 
+.redes_sociales ul li a:hover{
+    color: #FC7300;
 }
-h2{
-    font-family: belanosima, sans-serif;
-    text-align: center;
+/*Fin estilo footer*/
+
+
+
+@media only screen and (max-width: 768px){
+.nav_ul{
+    display: none;
 }
-h3{
-    font-family: belanosima, sans-serif;
-    text-align: center;
+.navresponsive_container{
+    display: block;
+    position: absolute;
+    width: 100%;
+}
+.navresponsive_buttom{
+    float: right;
+    font-size: 25px;
+    padding: 6px 20px;
+}
+.navresponsive_ul_li i{
+    color: #FC7300;
+}
 }
