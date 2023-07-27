@@ -51,13 +51,35 @@ nav ul li a:hover{
 section{
     background-color: #00425a;
 }
+.quienes_somos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.por_que_elegirnos{
+    display: flex;
+    justify-content: space-around;
+}
+
+section div p{
+    width: 50%;
+}
+.propuesta_educativa{
+    display: flex;
+    justify-content: space-around;
+}
+.ultimas_noticias{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
 /*Fin estilo section*/
 /*estilo footer*/
 footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #1F8A70;
+    background-color: #1f8A70;
 }
 
 footer article{

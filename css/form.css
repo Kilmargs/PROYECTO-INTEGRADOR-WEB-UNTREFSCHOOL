@@ -1,0 +1,42 @@
+*{
+    background-color: #00425a;
+    font-family: belanosima, sans-serif;
+    font-size: 100%;
+}
+.container{
+    width: 400px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.text{
+    background-color: #1f8a70;
+    margin: 10px;
+    border-bottom: 3px solid #181823;
+}
+.tel{
+    background-color: #1f8a70;
+    margin: 10px;
+    border-bottom: 3px solid #181823;
+}
+.email{
+    background-color: #1f8a70;
+    margin: 10px;
+    border-bottom: 3px solid #181823;
+}
+.textarea{
+    background-color: #1f8a70;
+    margin: 10px;
+    border-bottom: 3px solid #181823;
+    resize: none;
+}
+.button{
+    background-color: #fc7300;
+    margin: 10px;
+}
+::placeholder{
+    color: #fc7300;
+}
