@@ -6,15 +6,20 @@
     font-family: belanosima, sans-serif;
     color: #eff5f5;
 }
+body{
+    background-color: #00425a;
+}
 
 p{
     font-family: poppins, sans-serif;
+    width: 50%;
 }
 
 h2{
     text-align: center;
+    padding: 30px;
+    font-size: 3em;
 }
-
 /*fin de estilos universales*/
 
 /*estilo barra navegadora*/
@@ -46,32 +51,50 @@ nav ul li a:hover{
     color: #FC7300;
 }
 /*Fin estilo barra navegadora*/
+.banner img{
+    margin-top: 50px;
+}
+
 /*estilo section*/
 
 section{
     background-color: #00425a;
 }
+section div{
+    margin: 50px;
+}
+section img{
+    border: 7px solid #181823;
+}
+
 .quienes_somos{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around
 }
 
 .por_que_elegirnos{
     display: flex;
-    justify-content: space-around;
-}
-
-section div p{
-    width: 50%;
+    justify-content: space-around
 }
 .propuesta_educativa{
     display: flex;
     justify-content: space-around;
 }
+.propuesta_educativa article{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5em;
+}
+.propuesta_educativa article a{
+    text-decoration: none;
+}
+.propuesta_educativa article a:hover{
+    color: #FC7300;
+}
 .ultimas_noticias{
     display: flex;
-    justify-content: space-around;
-    text-align: center;
+    margin: 10px;
 }
 /*Fin estilo section*/
 /*estilo footer*/
