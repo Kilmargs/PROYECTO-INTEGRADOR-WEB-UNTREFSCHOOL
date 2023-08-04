@@ -1,162 +1,239 @@
-/*estilos universales*/
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins&display=swap');
+
+/*===CSS Global===*/
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: belanosima, sans-serif;
     color: #eff5f5;
 }
+img{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+
 body{
-    background-color: #00425a;
+    font-family: poppins;
+    background-color: #00425A;
 }
 
-p{
-    font-family: poppins, sans-serif;
-    width: 50%;
+h1 {
+    font-family: Belanosima;
+    color: _#eff5f5;
 }
 
-h2{
-    text-align: center;
-    padding: 30px;
-    font-size: 3em;
-}
-/*fin de estilos universales*/
-
-/*estilo barra navegadora*/
-.navresponsive_ul{
-display: none;
+h3 {
+    font-family: Belanosima;
+    color: #eff5f5;
 }
 
-.nav{
-    background-color: #00425a;
-    position: fixed;
+html{
+    scroll-behavior: smooth;
+}
+
+/*===CSS a clases===*/
+#logo{
+    width: 150px;
+    margin: auto;
+    padding-top: 10px;
+    padding-right: 3rem;
+}
+
+#barrasuperior {
     width: 100%;
 }
 
-.nav_ul_li{
+#banner{
+    margin-top: 5rem;
+    position: relative;
     display: inline-block;
-    padding: 10px;
-}
-
-.nav_ul_li i{
-    width: 20px;
-    color: #FC7300;
-}
-
-.nav_ul_li a{
-    text-decoration: none;
-}
-
-nav ul li a:hover{
-    color: #FC7300;
-}
-/*Fin estilo barra navegadora*/
-.banner img{
-    margin-top: 50px;
-}
-
-/*estilo section*/
-
-section{
-    background-color: #00425a;
-}
-section div{
-    margin: 50px;
-}
-section img{
-    border: 7px solid #181823;
-}
-
-.quienes_somos{
-    display: flex;
-    justify-content:space-around
-}
-
-.por_que_elegirnos{
-    display: flex;
-    justify-content: space-around
-}
-.propuesta_educativa{
-    display: flex;
-    justify-content: space-around;
-}
-.propuesta_educativa article{
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    font-size: 1.5em;
 }
-.propuesta_educativa article a{
+
+#textobanner{
+    font-family: Belanosima;
+    font-size: 80px;
+    color: #181823ff;
+    background-color: #FC7300;
+    opacity: 0.8;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#propuestaeducativa a{
+    color:#eff5f5ff;
     text-decoration: none;
 }
-.propuesta_educativa article a:hover{
-    color: #FC7300;
+
+#itempropuesta {
+    width: 80%;
+    text-align: center;
 }
-.ultimas_noticias{
-    display: flex;
-    margin: 10px;
+#itempropuesta img:hover {
+    transform: scale(0.9);
 }
-/*Fin estilo section*/
-/*estilo footer*/
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+#card{
     background-color: #1f8A70;
 }
 
-footer article{
-    width: 30%;
-}
-.redes_sociales ul li a{
-    display: block;
-    text-decoration: none;
-    margin-top: 20px;
+.formulario {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
-.redes_sociales ul li a:hover{
-    color: #FC7300;
+.btn-primary {
+    background-color: #FC7300;
+    border-color: #FC7300;
 }
-/*Fin estilo footer*/
+
+.enviarmensaje {
+    color: #eff5f5ff;
+    background-color: #1f8A70;
+    border-color: #1f8A70; 
+    margin-top: 1rem; 
+}
+.enviarmensaje:hover {
+    background-color: #FC7300;
+    border-color: #FC7300;
+    color: #eff5f5ff;
+}
 
 
+.btn-primary:hover {
+    background-color: #00425A;
+    border-color: #00425A;
+}
 
-@media only screen and (max-width: 768px){
-.nav_ul{
-    display: none;
+/*=== Footer===*/
+
+#piePagina{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 0.5fr;
+    justify-items: center;
+    background-color: #1f8A70;
+    color: white;
+    padding-top: 1rem;
+    padding-left: 1rem;
 }
-.navresponsive_ul{
-    display: block;
-    position:fixed;
-    width: 100%;
-    margin-top: 30px;
+#piePagina a:link{
+    color: #00425A;
 }
-.navresponsive_ul_div{
-    display:flex;
-    justify-content: space-between;
-    margin-top: -30px;
-    background-color: #00425a;
-    height: 50px;
-}
-.navresponsive_ul_div i{
+#redessociales li{
     padding: 10px;
-    height: 40px;
 }
-.navresponsive_container{
-    position: relative;
-    top: -1000px;
+
+ion-icon{
+    color: #FC7300;
+    font-size: 2rem;
 }
-.navresponsive_ul_li{
+
+#maps {
     padding: 10px;
 }
-.navresponsive_ul_li i{
-    color: #FC7300;
+
+/*=== Aplicando comportamiento resposive o adaptativo===*/
+
+/*=== Trabajando con CSS-GRID===*/
+@media (min-width: 320px) {
+    .contacto {
+        position: relative;
+    }
+    #textobanner{
+        font-size: 30px;
+    }
+
+    #piePagina{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #quienessomos {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+    }
+    
+    #porquelegirnos {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 1rem; 
+    }
+
+    #noticias {
+        display: grid;
+        grid-template-columns: 1fr;  
+        gap: 1rem;
+        padding-bottom: 3rem;
+    }
+    #propuestaeducativa {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
 }
-.navresponsive_ul_li a{
-    text-decoration: none;
+@media (min-width: 768px) { 
+    #textobanner{
+        font-size: 60px;
+    }
+
+    #piePagina{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 0.5fr;
+    }
+    #quienessomos {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+    }
+    
+    #porquelegirnos {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 1rem; 
+    }
+    #noticias {
+        display: grid;
+        grid-template-columns: 2fr 1fr;  
+        gap: 1rem;
+        padding-bottom: 3rem;
+    }
+    .contacto {
+        position: relative;
+    }
 }
-.navresponsive_ul:hover > .navresponsive_container{
-    top: 0;
-    background-color: #00425a;
-}
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    #quienessomos {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin-top: 1rem;
+        gap: 3rem;
+    }
+    
+    #porquelegirnos {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin-top: 1rem; 
+    }
+
+    #noticias {
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;  
+        gap: 1rem;
+        padding-bottom: 3rem;
+    }
+    .contacto {
+        position: absolute;
+        right: 0px;
+        width: 300px;
+        padding: 10px;
+    }
+    #propuestaeducativa {
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        padding: 50px;
+    }
 }

@@ -1,142 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/master.css">
-    <script src="https://kit.fontawesome.com/152fbb89f2.js" crossorigin="anonymous"></script>
-    <title>UntrefSchool</title>
+    <meta name="description" content="Bienvenidos a untrefschool. Dentro de nuestra propuesta educativa, las activadades que se desarrollan en los Talleres Extraprogramáticos cumplen un rol protagónico en la formación integral del educando.">
+    <meta name="keywords" content="Colegio, inicial, primaria, colegio, Escuela, Buenos Aires, educación, campus virtual, convenios.">
+    <meta name="author" content="Kilmar Gonzalez">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Untref School</title>
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel=”preconnect”>
+    <link rel="icon" type="image/jpg" href="./img/logo.jpeg"/>
 </head>
+
 <body>
-    <header>
+    <div class="container">
+        <header id="encabezado">
+            <div class="barrasuperior d-flex">
+                <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid" >
+                        <figure id="logo">
+                            <img src="./img/logo.jpeg" alt="Logo Untref School">
+                        </figure>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#quienessomos">Quiénes somos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#porquelegirnos">Por qué elegirnos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#propuestaeducativa">Propuesta educativa</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#noticias">Últimas noticias</a>
+                                </li>
+                            </ul>
+                            <div class="contacto">
+                                <a href="./contacto.html"><button type="button" class="btn btn-primary">Contacto</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div id="banner">
+                <img src="./img/Biblioteca.jpeg" alt="Biblioteca">
+                <div id="textobanner">UntrefSchool</div>
+            </div>
+            <section>
+                <h1>Quiénes somos</h1>
+                <div id="quienessomos">
+                    <img src="./img/Quienes somos.jpg" alt="quienes somos">
+                    <p>Lorem <b>ipsum dolor</b>. sit amet consectetur adipisicing elit Quia aperiam corporis obcaecati reprehenderit voluptatem aliquid similique facere praesentium impedit fuga quasi tempora quod sequi voluptate odio debitis minus recusandae fugiat.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab molestiae culpa corrupti cumque laudantium autem cupiditate unde repellendus aperiam at amet, deleniti adipisci dolorem ducimus? <b>Similique tempore</b> harum possimus ducimus!
+                    <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><br>Quia aperiam corporis obcaecati reprehenderit voluptatem aliquid similique facere praesentium impedit fuga quasi tempora quod sequi voluptate odio debitis minus recusandae fugiat, tenetur totam est temporibus maiores labore. Deserunt commodi nemo molestias voluptas in, beatae iusto maxime repellat veritatis id <b>earum sapiente</b> odio tenetur natus aliquam sequi corrupti minima accusantium! Quidem aliquam maxime molestias fugiat quis quos ex cupiditate ipsum omnis est id consectetur. ¡Acercate a conocernos!</p>
 
-        <nav class="nav">
-            <ul class="nav_ul">
-                <li class="nav_ul_li"><img src="img/logo.jpeg" height="30px"" alt="logo"></li>
-                <li class="nav_ul_li"><i class="fa-solid fa-users"></i><a href="#quienes.somos">Quienes somos</a></li>
-                <li class="nav_ul_li"><i class="fa-solid fa-thumbs-up"></i><a href="#por.que.elegirnos">¿Por que elerginos?</a></li>
-                <li class="nav_ul_li"><i class="fa-solid fa-book-open"></i><a href="#propuesta.educativa">Propuesta educativa</a></li>
-                <li class="nav_ul_li"><i class="fa-solid fa-newspaper"></i><a href="#ultimas.noticias">Ultimas noticias</a></li>
-                <li class="nav_ul_li"><i class="fa-solid fa-star"></i><a href="formulario.html" target="_blank">INSCRIBITE</a></li>
-            </ul>
-
-            <ul class="navresponsive_ul">
-                <div class="navresponsive_ul_div">
-                    <img src="img/logo.jpeg" alt="logo" height="30px">
-                    <i class="fa-solid fa-bars"></i>
                 </div>
-                <div class="navresponsive_container">
-                    <li class="navresponsive_ul_li"><i class="fa-solid fa-users"></i><a href="#quienes.somos">Quienes somos</a></li>
-                    <li class="navresponsive_ul_li"><i class="fa-solid fa-thumbs-up"></i><a href="#por.que.elegirnos">¿Por que elerginos?</a></li>
-                    <li class="navresponsive_ul_li"><i class="fa-solid fa-book-open"></i><a href="#propuesta.educativa">Propuesta educativa</a></li>
-                    <li class="navresponsive_ul_li"><i class="fa-solid fa-newspaper"></i><a href="#ultimas.noticias">Ultimas noticias</a></li>
-                    <li class="navresponsive_ul_li"><i class="fa-solid fa-star"></i><a href="formulario.html" target="_blank">INSCRIBITE</a></li>
+            </section>
+            <section>
+                <h1>¿Por qué elegirnos?</h1>
+                <div id="porquelegirnos">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore distinctio quas odio
+                        temporibus accusantium aperiam assumenda hic, praesentium maiores placeat fuga explicabo totam
+                        vitae similique rerum illo itaque ipsum non! Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nemo consequatur nulla explicabo animi minus corporis quia, facilis corrupti, aliquam ea, <b>laboriosam quos sed</b> temporibus saepe autem et optio praesentium obcaecati quaerat aperiam ipsum sequi. <br><br>Minus perspiciatis hic dicta dolorum, consectetur esse expedita modi corporis vero alias suscipit dolores, dolor aliquam est molestias veniam explicabo placeat neque, ab laudantium. Cumque, rerum at? Officia esse veritatis ea harum rem sint laborum saepe voluptatibus optio sed. Facere perferendis praesentium modi dicta cum, laboriosam porro repellat molestiae? Facere nihil fuga delectus quia! Qui laborum eius dolorem suscipit modi amet labore fugiat eligendi vero..</p>
+                    <img src="./img/Porque elegirnos.jpg" alt="Unaclase">
                 </div>
-            </ul>
-        </nav>
-
-    </header>
-    <div class="banner">
-        <img src="img/Biblioteca 2.jpeg" alt="" height="230px" width="100%" class="biblioteca" >
+            </section>
+            </section>
+            <section>
+                <h1>Propuesta educativa</h1>
+                <div id="propuestaeducativa">
+                   <a href="./propuesta.html"><div id="itempropuesta"><img src="img/educacion financiera.jpg" alt=""><h3>Educacion Financiera</h3></div></a> 
+                    <a href="./propuesta.html"><div id="itempropuesta"><img src="img/futbol.jpg" alt=""><h3>Deportes</h3></div></a>
+                    <a href="./propuesta.html"><div id="itempropuesta"><img src="img/musica.jpg" alt=""><h3>Musica</h3></div></a>
+                    <a href="./propuesta.html"><div id="itempropuesta"><img src="img/mas actividades.jpg" alt=""><h3>Mas Actividades</h3></div></a>
+                </div>
+            </section>
+            </section>
+            <section>
+                <h1>Últimas noticias</h1>
+                <div id="noticias">
+                    <div class="card" style="width: 22rem; background-color: #1f8A70;">
+                        <img src="./img/graduacion.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Graduacion 2023</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, saepe.
+                                Reprehenderit ratione, incidunt commodi quis cupiditate fugiat nihil blanditiis sequi
+                                sint voluptates accusamus, facere rem nulla, consequatur pariatur eos hic!</p>
+                            <a href="./propuesta.html" class="btn btn-primary">Continuar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 22rem; background-color: #1f8A70;">
+                        <img src="./img/san martin.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">21/8 paso a la inmortalidad del general san martin</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, saepe.
+                                Reprehenderit ratione, incidunt commodi quis cupiditate fugiat nihil blanditiis sequi
+                                sint voluptates accusamus, facere rem nulla, consequatur pariatur eos hic!</p>
+                            <a href="./propuesta.html" class="btn btn-primary">Continuar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 22rem; background-color: #1f8A70;">
+                        <img src="./img/bariloche.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Viaje bariloche 2023</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, saepe.
+                                Reprehenderit ratione, incidunt commodi quis cupiditate fugiat nihil blanditiis sequi
+                                sint voluptates accusamus, facere rem nulla, fugiat nihil blanditiis sequi, consequatur pariatur eos hic!</p>
+                            <a href="./propuesta.html" class="btn btn-primary">Continuar</a>
+                        </div>
+                    </div>
+                </div>
     </div>
-
-    <section class="container">
-        <div class="container1" id="quienes.somos">
-
-            <h2>Quienes somos</h2>
-
-            <div class="quienes_somos">
-                <img src="img/Quienes somos.jpg" alt="" width="350" id="quienes somos_img">
-                <p id="quienes somos_p" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis odit, aut ex qui impedit nam corporis delectus corrupti eveniet unde odio consequatur porro ducimus sequi reiciendis quo inventore placeat molestiae! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum minima ipsum quae vero cumque consequatur labore temporibus amet tenetur, accusamus pariatur magni corrupti quos. Nostrum numquam maxime similique iste natus!</p>
-            </div>
-        </div>
-        <div class="container2" id="por.que.elegirnos">
-
-            <h2>¿Por que elerginos?</h2>
-
-            <div class="por_que_elegirnos">
-                <p id="por_que_elegirnos_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur praesentium nulla non cupiditate quaerat nemo corrupti laboriosam officia, ipsa sunt nostrum nesciunt dolorum tempora laudantium ex dignissimos ad hic deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus quaerat aspernatur tenetur modi vel. Eum, sed rem. Laudantium, tenetur? Asperiores dolorem soluta dignissimos, sunt nihil perferendis vitae accusantium voluptatem?</p>
-                <img src="img/Porque elegirnos.jpg" alt=""
-            width="350" id="porque elegirnos_img">
-            </div>
-        </div>
-        <div class="container3" id="propuesta.educativa">
-
-            <h2>Propuesta educativa</h2>
-
-            <div class="propuesta_educativa">
-                <article>
-                    <a href="#" >Musica</a>
-                    <img src="img/musica.jpg" alt="" width="300px" height="200">
-                </article>
-                <article>
-                    <a href="#">Deporte</a>
-                    <img src="img/futbol.jpg" alt="" width="300px" height="200px">
-                </article>
-                <article>
-                    <a href="#">Educacion financiera</a>
-                    <img src="img/educacion financiera.jpg" alt="" width="300px" height="200px">
-                </article>
-            </div>
-        </div>
-        <div class="container4" id="ultimas.noticias">
-
-            <h2>Ultimas noticias</h2>
-
-            <div class="ultimas_noticias">
-                <article class="ultimas_noticias_article1">
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ad sequi adipisci ex, eveniet magni aliquid, doloremque dolore nesciunt exercitationem veniam ipsum ratione odio nisi esse amet explicabo quisquam dolorem!</p>
-                </article>
-
-                <article class="ultimas_noticias_article2">
-                    <h3>dolor sit</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorum, eum temporibus porro impedit beatae eius totam iure, modi praesentium similique. Doloribus nostrum dolor, aut asperiores perferendis maiores laboriosam at.</p>
-                </article>
-            </div>
-        </div>
     </section>
-
-    <footer class="footer">
-        <article class="footer_article1">
-
-            <h2>Redes Sociales</h2>
-
-            <div class="redes_sociales">
-                <ul>
-                    <li><a href="#" <i class="fa-brands fa-facebook"></i> Facebook</a></li>
-                    <li ><a href="#" <i class="fa-brands fa-instagram"></i> Instagram</a></li>
-                    <li><a href="#" <i class="fa-brands fa-twitter"></i> Twitter</a></li>
-                    <li><a href="#" <i class="fa-brands fa-linkedin"></i> Linkedin</a></li>
-                </ul>
-            </div>
-        </article>
-
-        <article class="footer_article2">
-            <h2>Ubicacion</h2>
-
-            <div class="ubicacion">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210182.66545292473!2d-58.81659507751465!3d-34.60152785271764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7c0fa8ea61b%3A0xc39ce2c5b55bb74!2sUniversidad%20Nacional%20de%20Tres%20de%20Febrero%20(UNTREF)%20-%20Rectorado!5e0!3m2!1ses!2sar!4v1689827212732!5m2!1ses!2sar" height="200px" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </article>
-
-        <article class="footer_article3">
-
-            <h2>Contactanos</h2>
-
-            <div class="contacto" style="display: block;">
-                <h4>Telefono</h4>
-
-                <p>1122551087</p>
-
-                <h4>Email</h4>
-
-                <p>Kilmargs@outlook.com</p>
-            </div>
-        </article>
+    </main>
+    <footer id="piePagina">
+        <div id="redes">
+            <h2>Nuestras redes</h2>
+            <ul id="redessociales">
+                <li><a href="#" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>Instagram</li>
+                <li><a href="#" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>Facebook</li>
+                <li><a href="#" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>LinkedIn</li>
+            </ul>
+        </div>
+        <div id="mapa">
+            <h2>Dirección</h2>
+            <iframe id="maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105086.89093312966!2d-58.708532256640645!3d-34.60503789999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb9f8ff113%3A0x22fd08da6711928d!2sUniversidad%20Nacional%20de%20Tres%20de%20Febrero%20-%20Sede%20Caseros%20I!5e0!3m2!1ses-419!2sar!4v1689683276373!5m2!1ses-419!2sar"
+                width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="contacto">
+            <h3>Contacto</h3>
+            <p>Email: <a href="mailto:contacto@untrefschool.com">contacto@untrefschool.com</a></p>
+            <p>Teléfono: 11-555-5555</p>
+            <p><a href="./contacto.html"><button type="button" class="btn btn-primary contacto2"> Contacto </button></a></p>
+        </div>
+        <div>
+            <a href="#encabezado"><ion-icon name="caret-up-outline"></ion-icon></a>
+        </div>
     </footer>
-
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
